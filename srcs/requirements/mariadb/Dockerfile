@@ -9,4 +9,4 @@ COPY	conf/50-server.cnf /etc/mysql/mariadb.conf.d/50-server.cnf
 
 COPY	tools/mysql.sh .
 
-#CMD	bash mysql.sh
+CMD	bash mysql.sh
