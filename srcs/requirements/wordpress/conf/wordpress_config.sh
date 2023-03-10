@@ -18,10 +18,10 @@ then
 		--allow-root
 
 	wp user create --allow-root \
-		--role=author \
-		--user-login=$USER_NAME \
-		--user-email=$USER_MAIL \
-		--user-pass=$USER_PASS \
+		--role=author $USER_NAME $USER_MAIL \
+		# --user-login=$USER_NAME \
+		# --user-email=$USER_MAIL \
+		--user_pass=$USER_PASS \
 		--path='/var/www/wordpress'
 
 fi

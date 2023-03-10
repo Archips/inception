@@ -58,13 +58,13 @@ volumes:
                 driver_opts:
                         type: 'none'
                         o: 'bind'
-                        device: '/home/vagrant/inception/data/wordpress'
+                        device: '/home/athirion/data/wordpress'
         mariadb:
                 driver: local
                 driver_opts:
                         type: 'none'
                         o: 'bind'
-                        device: '/home/vagrant/inception/data/mariadb'
+                        device: '/home/athirion/data/mariadb'
 
 networks:
         inception:
