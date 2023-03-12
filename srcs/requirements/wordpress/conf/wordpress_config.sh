@@ -9,18 +9,20 @@ then
 	       --dbpass=$SQL_PASSWORD \
 	       --dbhost=mariadb:3306 --path='/var/www/wordpress'
 
+    sleep 2
+
 	wp core install --url=$URL_SITE \
 		--title=$TITLE_SITE \
 		--admin_user=$ADMIN_NAME \
 		--admin_password=$ADMIN_PASSWORD \
 		--admin_email=$ADMIN_MAIL \
-		--path='/var/www/wordpress' \
-		--allow-root
+		--allow-root \
+		--path='/var/www/wordpress'
 
 	wp user create --allow-root \
-		--role=author $USER_NAME $USER_MAIL \
-		# --user-login=$USER_NAME \
-		# --user-email=$USER_MAIL \
+		--role=author \
+        $USER_NAME \
+        $USER_MAIL \
 		--user_pass=$USER_PASS \
 		--path='/var/www/wordpress'
 
