@@ -1,3 +1,2 @@
 # inception_42
-https://tuto.grademe.fr/inception/#accueil
-https://www.digitalocean.com/community/tutorials/understanding-nginx-server-and-location-block-selection-algorithms-fr
+https://cute-balance-43f.notion.site/Yet-another-inception-7cf30420f7374f11adbe9f2b6d0dfe07
