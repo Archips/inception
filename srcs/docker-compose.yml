@@ -58,15 +58,15 @@ volumes:
                 driver_opts:
                         type: 'none'
                         o: 'bind'
-                        device: '/Users/archibald/data/wordpress'
-                        # device: '/home/athirion/data/wordpress'
+                        # device: '/Users/archibald/data/wordpress'
+                        device: '/home/athirion/data/wordpress'
         mariadb:
                 driver: local
                 driver_opts:
                         type: 'none'
                         o: 'bind'
-                        device: '/Users/archibald/data/mariadb'
-                        # device: '/home/athirion/data/mariadb'
+                        # device: '/Users/archibald/data/mariadb'
+                        device: '/home/athirion/data/mariadb'
 
 networks:
         inception:
