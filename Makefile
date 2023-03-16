@@ -30,3 +30,7 @@ clean:
 
 fclean: clean
 	@docker system prune -af
+
+re: fclean all
+
+.PHONY : all build up start stop clean fclean re
