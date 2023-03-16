@@ -20,7 +20,7 @@ RUN		chmod +x wp-cli.phar
 RUN		mv wp-cli.phar /usr/local/bin/wp
 
 COPY		conf/wordpress_config.sh .
-ENTRYPOINT	bash wordpress_config.sh
+ENTRYPOINT	["bash", "wordpress_config.sh"]
 
 
 
