@@ -16,6 +16,22 @@ services:
                 restart: unless-stopped
                 expose:
                         - "3306"
+        wordpress:
+                image: wordpress
+                container_name: wordpress
+                networks:
+                        - inception
+                build:
+                        context: requirements/wordpress
+                        dockerfile: Dockerfile
+                env_file: .env
+                volumes:
+                        - wordpress:/var/www/wordpress
+                restart: unless-stopped
+                depends_on:
+                        - mariadb
+                expose:
+                        - "9000"
 
         nginx:
                 image: nginx
@@ -33,23 +49,6 @@ services:
                         - wordpress
                 ports:
                         - "443:443"
-
-        wordpress:
-                image: wordpress
-                container_name: wordpress
-                networks:
-                        - inception
-                build:
-                        context: requirements/wordpress
-                        dockerfile: Dockerfile
-                env_file: .env
-                volumes:
-                        - wordpress:/var/www/wordpress
-                restart: unless-stopped
-                depends_on:
-                        - mariadb
-                expose:
-                        - "9000"
 
 volumes:
 

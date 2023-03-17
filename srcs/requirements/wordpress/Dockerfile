@@ -19,8 +19,8 @@ RUN		wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.p
 RUN		chmod +x wp-cli.phar
 RUN		mv wp-cli.phar /usr/local/bin/wp
 
-COPY		conf/wordpress_config.sh .
-ENTRYPOINT	["bash", "wordpress_config.sh"]
+COPY		tools/wordpress_config.sh .
 
+RUN		chmod +x ./wordpress_config.sh
 
-
+ENTRYPOINT	["./wordpress_config.sh"]
