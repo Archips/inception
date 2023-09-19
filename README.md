@@ -2,6 +2,10 @@
 
 This project involves setting up a comprehensive infrastructure within a virtual machine using Docker Compose. It encompasses several services, each running in dedicated containers, and adheres to specific guidelines for performance and security. The core components include NGINX with TLSv1.2 or TLSv1.3, WordPress with php-fpm, MariaDB, and the necessary volumes and networks to support these services.
 
+Here is the exepected architecture:  
+
+![architecture-inception](https://github.com/Archips/inception_42/blob/main/inception_architecture.png)
+
 ## Highlights
 
 - **Virtual Machine Environment:** The project is designed to be executed within a virtual machine, ensuring isolation and control over the development environment.
@@ -45,3 +49,7 @@ By following these steps, you can deploy a secure and efficient infrastructure f
 ## Complete tutorial
 
 [Yet another inception](https://cute-balance-43f.notion.site/Yet-another-inception-7cf30420f7374f11adbe9f2b6d0dfe07)
+
+## Author
+
+[Archibald Thirion](https://github.com/Archips)
