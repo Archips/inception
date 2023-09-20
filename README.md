@@ -6,7 +6,11 @@ Here is the exepected architecture:
 
 ![architecture-inception](https://github.com/Archips/inception_42/blob/main/inception_architecture.png)
 
-## Highlights
+## Score
+
+-  100%
+
+## Project Highlights
 
 - **Virtual Machine Environment:** The project is designed to be executed within a virtual machine, ensuring isolation and control over the development environment.
 
